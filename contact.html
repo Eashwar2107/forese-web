@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="FORESE">
+    <meta name="author" content="Devcrud">
+    <title>FORESE</title>
+    <link rel="icon" href="./assets/imgs/foresebluelogo.png" type="image/icon type">
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.css">
+
+    <!-- Bootstrap + Ollie main styles -->
+	<link rel="stylesheet" href="./assets/css/main.css">
+
+    <!--Animate on Scroll library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--EmailJS Integration-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("htxLVbBq_f1V7mBEF");
+    })();
+    </script>
+
+
+    <!--EmailJS Validation and Submission-->
+    <script src="./assets/js/emailscript.js" type="text/javascript"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <nav id="scrollspy" class="navbar navbar-light bg-light navbar-expand-lg fixed-top" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="./assets/imgs/foresebluelogo.png" alt="Forese logo" class="brand-img"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aptitudeandgd.html">Aptitude & GD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="codersforum.html">Coders' Forum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="thewealthsociety.html">The Wealth Society</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ml-0 ml-lg-4">
+                        <a class="nav-link btn btn-primary" href="logins.html"><h7 style="color:white">Submit Resumes</h7></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Contact us section starts-->
+    <section class="section" id="contact"><br><br>
+
+            <div class="col-auto">
+                <h6 class="xs-font mb-0" align="center">FORESE</h6>
+                <h2 class="section-title" align="center" data-aos="fade-right">Contact Us</h2><br>
+            </div>    
+
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Send us a Message</h3>
+
+                <form name="contact_form">
+
+                    <div class="input-row">
+                        <div class="input group">
+                            <label>Name</label>
+                            <input type="text" id="fullName" name="name_sender" placeholder="Full Name" />
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input group">
+                            <label>Email</label>
+                            <input type="email" id="email_id" name="emailadd" placeholder="xyz@gmail.com" />
+                        </div>
+                    </div>
+
+                    <label>Message</label>
+                    <textarea rows="3" id="message" name="msg_sender" placeholder="Your Message"></textarea>
+
+                    <button onclick="SendMail(); reset();" type="button">SEND</button>
+
+                </form>
+                
+            </div>
+
+            <div class="contact-right">
+                <h3>Reach Us</h3>
+
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>forese@svce.ac.in</td>
+                    </tr>
+
+                    <tr>
+                        <td>Address</td>
+                        <td>Sri Venkateswara College of Engineering, 
+                            Post Bag No. 1 Pennalur Village, 
+                            Chennai - Bengaluru High Road
+                            Sriperumbudur Tk. - 602 117, 
+                            Kancheepuram District
+                            Tamil Nadu, India</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+    </section>                  
+    <!--Contact us section ends-->
+
+
+
+
+    <!--Footer section starts-->
+    <footer class="site-footer">
+
+        <div class="container-footer">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+            <h6 style="padding-left:30px; padding-right:30px;">About</h6><br>
+            <p class="text-justify" style="padding-left:30px; padding-right:30px;">FORESE is a student-run forum and an extension of the Placement cell. It empowers students and equips them with essential soft skills such as team management, interpersonal, and leadership skills useful for their careers.</p>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+
+            <h6>Quick Links</h6>
+
+            <ul class="footer-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="mockplacements.html">Mock Placements</a></li>
+                <li><a href="fored.html">ForEd</a></li>
+            </ul>
+
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+
+            <br>
+            <ul class="footer-links">
+                <li><a href="webinars.html">Webinars</a></li>
+                <li><a href="aptitudeandgd.html">Aptitude & GD</a></li>
+                <li><a href="codersforum.html">Coders' Forum</a></li>
+                <li><a href="thewealthsociety.html">The Wealth Society</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="logins.html">Submit Resumes</a></li>
+            </ul>
+            </div>
+
+        </div>
+        <hr>
+
+        </div>
+
+        <div class="container-footer">
+        <div class="col-md-7 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+            <li><a class="linkedin" href="https://www.linkedin.com/company/forese/mycompany/"><i class="ti-linkedin"></i></a></li>
+            <li><a class="github" href="https://github.com/ForeseTech"><i class="ti-github"></i></a></li>   
+            </ul>
+        </div>
+        </div><br>
+
+        <div class="container-footer">           
+            <div class="col-md-12 col-sm-6 col-xs-12">
+            <p class="copyright-text" align="center">Designed and Developed by <b>Forese Tech Team</b></p>
+            </div>
+        </div>
+        
+        
+    </footer>
+<!--Footer section ends-->
+
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/js/Ollie.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+
+<!--Aos library js-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+</body>
+</html>    
