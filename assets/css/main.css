@@ -13611,10 +13611,12 @@ textarea::placeholder{
 .grid-team {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 4rem;
+  grid-gap: 8rem;
   padding-left:80px;
   margin-top: 60px;
   padding-right:80px;
+  color: #f44336;
+
 }
 
 
@@ -13628,7 +13630,20 @@ textarea::placeholder{
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  color: #5d5e5e;
+  
+}
+
+.logo-team1{
+  border: 1px solid #e7e7e7;
+  border-radius: 7px;
+  padding: .5rem;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  background-color: #adaff4;
 }
 
 .grid-team div {
@@ -13655,6 +13670,7 @@ textarea::placeholder{
   margin-top: 120px;
   transform: translate(-50%, -50%);
   border-radius: 4px;
+  /* color:#007bff; */
 }
 
 @media (max-width:700px){
@@ -13664,12 +13680,14 @@ textarea::placeholder{
     height:230px;
     width:230px;
     object-fit: cover;
+    /* color:#007bff; */
   }
 }
 
 .mem-info{
   margin-top:60px;
   position:relative;
+  /* color:#fff; */
 }
 
 .team-name {
@@ -13680,11 +13698,28 @@ textarea::placeholder{
   color:black;
 }
 
+.team-name1{
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-align: center;
+  color:white;
+  
+}
+
 .team-title {
   font-size: 1.1rem;
   color: black;
   font-weight: 370;
   text-align: center;
+}
+
+.team-title1{
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  
 }
 
 .team-pos{
@@ -13693,6 +13728,15 @@ textarea::placeholder{
   font-weight: 400;
   opacity:0.6;
   text-align: center;
+}
+
+.team-pos1{
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 400;
+  opacity:0.4;
+  text-align: center;
+  
 }
 
 .team-social{
@@ -13726,8 +13770,9 @@ textarea::placeholder{
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 8rem;
   margin-top:50px;
-  padding-left:180px;
-  padding-right:180px;
+  padding-left:200px;
+  padding-right:200px;
+
 }
 
 .grid-team-2 div {
@@ -13761,7 +13806,7 @@ textarea::placeholder{
   .grid-team-2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 12rem;
+    grid-gap: 8rem;
     padding-left:80px;
     padding-right:80px;
     padding-top:5px;
