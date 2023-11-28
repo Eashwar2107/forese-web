@@ -11522,7 +11522,7 @@ pre .code {
   position: relative;
   height: 100vh;
   min-height: 600px;
-  background-image: url(../imgs/bg-img.jpg);
+  background-image: url(../imgs/bg-img.png);
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -13233,6 +13233,17 @@ textarea::placeholder{
   min-height:100vh;
 }
 
+.container-gallery1{
+  max-width:1300px;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
 .container-gallery .gallery{
   display:flex;
   flex-wrap: wrap;
@@ -13298,7 +13309,7 @@ textarea::placeholder{
 .projcard {
 	position: relative;
 	width: 100%;
-	height: 370px;
+	height: 450px;
 	margin-bottom: 40px;
 	border-radius: 10px;
 	background-color: #EDEFFE;
@@ -13768,12 +13779,23 @@ textarea::placeholder{
 .grid-team-2 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 8rem;
+  grid-gap: 16rem;
   margin-top:50px;
-  padding-left:200px;
-  padding-right:200px;
+  padding-left:100px;
+  padding-right:100px;
 
 }
+
+/* .grid-team {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 8rem;
+  padding-left:80px;
+  margin-top: 60px;
+  padding-right:80px;
+  color: #f44336;
+
+} */
 
 .grid-team-2 div {
   padding: 1rem;
@@ -13806,7 +13828,7 @@ textarea::placeholder{
   .grid-team-2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 8rem;
+    grid-gap: rem;
     padding-left:80px;
     padding-right:80px;
     padding-top:5px;
