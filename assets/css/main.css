@@ -13790,17 +13790,6 @@ margin-top: 2%;
 	
 }
 
-/* .grid-team {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 8rem;
-  padding-left:80px;
-  margin-top: 60px;
-  padding-right:80px;
-  color: #f44336;
-
-} */
-
 .grid-team-2 div {
   padding: 1rem;
   position: relative;
