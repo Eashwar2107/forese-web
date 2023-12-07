@@ -11676,12 +11676,14 @@ pre .code {
   }
   .header .carousel .carousel-inner .carousel-title {
     font-weight: 550;
-    font-size: 18.5px;
+    font-size: 15px;
   } 
   .header {
     position: relative;
-    height: 100vh;
-    min-height: 400px;
+    height: 50vh;
+    width: 100%;
+    min-height: 250px;
+    min-width: 400px;
     background-image: url(../imgs/bg-img-min.png);
     background-size: cover;
     background-position: center;
@@ -11923,9 +11925,14 @@ textarea::placeholder{
 @media (max-width: 767px) {
   .contact-box{
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
   .contact-left, .contact-right{
     border-radius:20px 20px 20px 20px;
+    margin-bottom: 10%;
+    min-width: 300px;
+    width: 130%;
   }
 }
 /*Contact section CSS ends*/
@@ -11947,12 +11954,12 @@ textarea::placeholder{
   margin: 0;
 }
 
-.typed-out1{
-  overflow: hidden;
+.typed-out{
+  overflow:hidden;
   border-right: .15em ;
   white-space: nowrap;
-  text-align: center;
-  animation: typing 5s steps(60, end) forwards, blinking .3s infinite no-repeat;
+  animation: typing 5s steps(60, end) forwards, blinking .3s infinite;
+  font-size: 1.6rem;
   width: 0;
   margin: 0;
 }
@@ -13550,33 +13557,30 @@ textarea::placeholder{
   flex-wrap: wrap;
 }
 .card--abt{
-max-width: 300px;
+  max-width: 300px;
   min-height: 250px;
   background: #646FD4;
-  padding: 60px 40px;
-position: relative;
+  padding: 60px 30px;
+  position: relative;
   border-radius: 15px;
   box-sizing: border-box;
   color: #fff;
-  margin:40px 100px;
-
-
+  margin:20px;
   box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
 }
-.card--abt:hover{
-transform: scale(1.05);
-transition:0.5s ease;
-}
+
 
 .card-title--abt{
   margin-top: 0;
   letter-spacing: 1.2px;
 }
+
 .card-content--abt{
   font-size: 16px;
   letter-spacing: 0.5px;
   line-height: 1.5;
   color:#fff;
+  
 }
 .card-btn--abt{
   all: unset;
@@ -13606,6 +13610,43 @@ margin-top: 2%;
 .card--abt:last-child .card-btn--abt:hover{
    color:#673ab7;
     background: #FFF;
+}
+
+.card--abt1{
+  max-width: 300px;
+  min-height: 250px;
+  background: #646FD4;
+  padding: 8px 18px;
+  position: relative;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #fff;
+  margin:20px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+}
+.card--abt1:hover{
+  transform: scale(1.05);
+  transition:0.5s ease;
+  }
+  
+.card-title--abt1{
+  margin-top: 0;
+  letter-spacing: 1.2px;
+  padding-top: 50px;
+
+}
+.card--abt:hover{
+transform: scale(1.05);
+transition:0.5s ease;
+}
+
+.card-content--abt1{
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  color:#fff;
+  margin-left: 15px;
+  
 }
 /*About Us- Our Events section CSS ends*/
 
