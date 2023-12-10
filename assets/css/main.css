@@ -13341,7 +13341,7 @@ textarea::placeholder{
 
 
 
-/*Webinars -Card CSS starts*/
+/*Seminars -Card CSS starts*/
 .projcard-container {
 	margin: 50px 0;
 }
@@ -13561,21 +13561,21 @@ textarea::placeholder{
   .projcard-textbox:first-of-type{
     position: absolute;
     top: 7%;
-    left: 260px;
-    width: calc(100% - 280px);
+    left: 220px;
+    width: calc(100%-230px);
   }
 
   #projcard-textbox-2 {
     position: absolute;
     top: 7%;
-    left: 20px;
-    width: calc(100% - 280px);
+    left: 15px;
+    width: calc(100%-120px);
   }
   
   .projcard-img {
     position: absolute;
     height: 320px;
-    width: 240px;
+    width: 185px;
     top: 0;
     left: 0;
     transition: transform 0.2s ease;
@@ -13594,6 +13594,63 @@ textarea::placeholder{
   }
 
 }
+
+@media (max-width: 350px){
+  .projcard-container{
+    width:calc(100% / 1);
+  }
+  .projcard {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: #EDEFFE;
+    border: 2px solid #EDEFFE;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .projcard-textbox:first-of-type{
+    position: absolute;
+    top: 7%;
+    left: 200px;
+    width: calc(100%-160px);
+  }
+
+  #projcard-textbox-2 {
+    position: absolute;
+    top: 7%;
+    left: 20px;
+    width: calc(100%-200px);
+  }
+  
+  .projcard-img {
+    position: absolute;
+    height: 240px;
+    width: 160px;
+    top: 0;
+    left: 0;
+    transition: transform 0.2s ease;
+  }
+  .projcard:hover .projcard-img {
+    transform: scale(1.01) rotate(0deg);
+  }
+  .projcard-description{
+    font-size: 2px;
+  }
+  .projcard-title{
+    font-size: 4px;
+  }
+  .projcard-subtitle{
+    font-size:3px;
+  }
+
+}
+
+
 /*Webinars- Card CSS ends*/
 
 
