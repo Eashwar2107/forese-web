@@ -13489,6 +13489,7 @@ textarea::placeholder{
   }
 }
 
+
 @media (max-width:991px) {
   .projcard-container{
     width:calc(100% / 1);
@@ -13540,7 +13541,7 @@ textarea::placeholder{
   }
 }
 
-@media (max-width: 691px){
+/* @media (max-width: 691px){
   .projcard-container{
     width:calc(100% / 1);
   }
@@ -13593,16 +13594,77 @@ textarea::placeholder{
     font-size:11px;
   }
 
+} */
+@media (max-width:691px) {
+  .projcard-container {
+    width: calc(100% / 1);
+  }
+
+  .projcard {
+    position: relative;
+    width: 100%;
+    height: 320px; /* adjust height as needed */
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: #EDEFFE;
+    border: 2px solid #EDEFFE;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .projcard-textbox:first-of-type {
+    position: absolute;
+    top: 7%;
+    bottom: 7%;
+    left: 180px; /* adjust position as needed */
+    width: calc(100% - 190px); /* adjust width as needed */
+  }
+
+  #projcard-textbox-2 {
+    position: absolute;
+    top: 7%;
+    bottom: 7%;
+    left: 20px; /* adjust position as needed */
+    width: calc(100% - 177px); /* adjust width as needed */
+  }
+
+  .projcard-img {
+    position: absolute;
+    height: 320px; /* adjust height as needed */
+    width: 140px; /* adjust width as needed */
+    top: 0;
+    left: 0;
+    right: 100px;
+    transition: transform 0.2s ease;
+  }
+
+  .projcard:hover .projcard-img {
+    transform: scale(1.01) rotate(0deg);
+  }
+
+  .projcard-description {
+    font-size: 8.4px; /* adjust font size as needed */
+  }
+
+  .projcard-title {
+    font-size: 10px; /* adjust font size as needed */
+  }
+
+  .projcard-subtitle {
+    font-size: 9px; /* adjust font size as needed */
+  }
 }
 
-@media (max-width: 350px){
+/* @media (max-width: 320px){
   .projcard-container{
-    width:calc(100% / 1);
+    width:calc(100% / 0.9);
   }
   .projcard {
     position: relative;
     width: 100%;
-    height: 280px;
+    height: 300px;
     margin-bottom: 40px;
     border-radius: 10px;
     background-color: #EDEFFE;
@@ -13624,12 +13686,12 @@ textarea::placeholder{
     position: absolute;
     top: 7%;
     left: 20px;
-    width: calc(100%-200px);
+    width: calc(100%-100px);
   }
   
   .projcard-img {
     position: absolute;
-    height: 240px;
+    height: 280px;
     width: 160px;
     top: 0;
     left: 0;
@@ -13648,6 +13710,65 @@ textarea::placeholder{
     font-size:3px;
   }
 
+} */
+@media (max-width:350px) {
+  .projcard-container{
+    width:calc(100% / 1);
+  }
+  .projcard {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: #EDEFFE;
+    border: 2px solid #EDEFFE;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .projcard-textbox:first-of-type {
+    position: absolute;
+    top: 7%;
+    bottom: 7%;
+    left: 140px;
+    width: calc(100% - 165.9939455095863px);
+  }
+
+  #projcard-textbox-2 {
+    position: absolute;
+    top: 7%;
+    bottom: 7%;
+    left: 10px;
+    width: calc(100% - 145.9939455095863px);
+  }
+  
+
+  .projcard-img {
+    position: absolute;
+    height: 290px;
+    width: 120.27144298688194px;
+    top: 0;
+    left: 0;
+    right: 40px;
+    transition: transform 0.2s ease;
+  }
+
+  .projcard:hover .projcard-img {
+    transform: scale(1.01) rotate(0deg);
+  }
+
+  .projcard-description{
+    font-size: 7px;
+  }
+  .projcard-title{
+    font-size: 9px;
+  }
+  .projcard-subtitle{
+    font-size:7px;
+  }
 }
 
 
