@@ -12002,7 +12002,7 @@ textarea::placeholder{
   margin: 0;
 }
 
-/* .typed-out{
+.typed-out1{
   overflow:hidden;
   border-right: .15em ;
   white-space: nowrap;
@@ -12010,7 +12010,7 @@ textarea::placeholder{
   font-size: 1.6rem;
   width: 0;
   margin: 0;
-} */
+}
 
 .container-carousel{
   font-size: 2.5rem;
