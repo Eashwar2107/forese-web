@@ -12007,7 +12007,7 @@ textarea::placeholder{
   border-right: .15em ;
   white-space: nowrap;
   animation: typing 5s steps(60, end) forwards, blinking .3s infinite;
-  animation-delay: 1s;
+  animation-delay: 0s;
   font-size: 1.6rem;
   width: 0;
   margin: 0;
