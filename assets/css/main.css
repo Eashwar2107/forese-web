@@ -13358,7 +13358,7 @@ textarea::placeholder{
 .projcard {
 	position: relative;
 	width: 100%;
-	height: 450px;
+	height: 370px;
 	margin-bottom: 40px;
 	border-radius: 10px;
 	background-color: #EDEFFE;
@@ -13402,11 +13402,26 @@ textarea::placeholder{
 	left: 0;
 	transition: transform 0.2s ease;
 }
+#projcard-img-1 {
+	position: absolute;
+	height: 400px;
+	width: 400px;
+	top: 0;
+	left: 0;
+	transition: transform 0.2s ease;
+}
 .projcard:nth-child(2n) .projcard-img {
 	left: initial;
 	right: 0;
 }
 .projcard:hover .projcard-img {
+	transform: scale(1.05) rotate(0deg);
+}
+.projcard:nth-child(2n) #projcard-img-1 {
+	left: initial;
+	right: 0;
+}
+.projcard:hover #projcard-img-1 {
 	transform: scale(1.05) rotate(0deg);
 }
 .projcard:hover .projcard-bar {
@@ -13523,6 +13538,20 @@ textarea::placeholder{
     top: 0;
     left: 0;
     right: 50px;
+    object-fit: cover;
+    object-position: 40%; 
+    transition: transform 0.2s ease;
+  }
+
+  #projcard-img-1 {
+    position: absolute;
+    height: 380px;
+    width: 400px;
+    top: 0;
+    left: 0;
+    right: 50px;
+    object-fit: cover;
+    object-position: 80%;
     transition: transform 0.2s ease;
   }
 
@@ -13603,7 +13632,7 @@ textarea::placeholder{
   .projcard {
     position: relative;
     width: 100%;
-    height: 320px; /* adjust height as needed */
+    height: 320px; 
     margin-bottom: 40px;
     border-radius: 10px;
     background-color: #EDEFFE;
@@ -13618,25 +13647,37 @@ textarea::placeholder{
     position: absolute;
     top: 7%;
     bottom: 7%;
-    left: 180px; /* adjust position as needed */
-    width: calc(100% - 190px); /* adjust width as needed */
+    left: 160px; 
+    width: calc(100% - 200px); 
   }
 
   #projcard-textbox-2 {
     position: absolute;
     top: 7%;
     bottom: 7%;
-    left: 20px; /* adjust position as needed */
-    width: calc(100% - 177px); /* adjust width as needed */
+    left: 15px; 
+    width: calc(100% - 175px); 
   }
 
   .projcard-img {
     position: absolute;
-    height: 320px; /* adjust height as needed */
-    width: 140px; /* adjust width as needed */
+    height: 320px; 
+    width: 140px; 
     top: 0;
     left: 0;
-    right: 100px;
+    object-fit:cover;
+    object-position: 40%;
+    transition: transform 0.2s ease;
+  }
+
+  #projcard-img-1 {
+    position: absolute;
+    height: 320px;
+    width: 140px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: 80%;
     transition: transform 0.2s ease;
   }
 
@@ -13644,16 +13685,20 @@ textarea::placeholder{
     transform: scale(1.01) rotate(0deg);
   }
 
+  .projcard:hover #projcard-img-1 {
+    transform: scale(1.01) rotate(0deg);
+  }
+
   .projcard-description {
-    font-size: 8.4px; /* adjust font size as needed */
+    font-size: 8.4px; 
   }
 
   .projcard-title {
-    font-size: 10px; /* adjust font size as needed */
+    font-size: 10px; 
   }
 
   .projcard-subtitle {
-    font-size: 9px; /* adjust font size as needed */
+    font-size: 9px; 
   }
 }
 
@@ -13718,7 +13763,7 @@ textarea::placeholder{
   .projcard {
     position: relative;
     width: 100%;
-    height: 280px;
+    height: 190px;
     margin-bottom: 40px;
     border-radius: 10px;
     background-color: #EDEFFE;
@@ -13733,8 +13778,8 @@ textarea::placeholder{
     position: absolute;
     top: 7%;
     bottom: 7%;
-    left: 140px;
-    width: calc(100% - 165.9939455095863px);
+    left: 108px;
+    width: calc(100% - 150px);
   }
 
   #projcard-textbox-2 {
@@ -13742,29 +13787,47 @@ textarea::placeholder{
     top: 7%;
     bottom: 7%;
     left: 10px;
-    width: calc(100% - 145.9939455095863px);
+    width: calc(100% - 125px);
   }
   
 
   .projcard-img {
     position: absolute;
-    height: 290px;
-    width: 120.27144298688194px;
+    height: 190px;
+    width: 100px;
     top: 0;
     left: 0;
-    right: 40px;
+    right: 10px;
+    object-fit: cover;
+    object-position: 40%;
     transition: transform 0.2s ease;
   }
+
+  #projcard-img-1 {
+    position: absolute;
+    height: 190px;
+    width: 100px;
+    top: 0;
+    left: 0;
+    right: 10px;
+    object-fit: cover;
+    object-position: 80%;
+    transition: transform 0.2s ease;
+  } 
 
   .projcard:hover .projcard-img {
     transform: scale(1.01) rotate(0deg);
   }
 
+  .projcard:hover #projcard-img-1 {
+    transform: scale(1.01) rotate(0deg);
+  }
+
   .projcard-description{
-    font-size: 7px;
+    font-size: 5.5px;
   }
   .projcard-title{
-    font-size: 9px;
+    font-size: 8px;
   }
   .projcard-subtitle{
     font-size:7px;
@@ -13772,7 +13835,7 @@ textarea::placeholder{
 }
 
 
-/*Webinars- Card CSS ends*/
+/*Seminars- Card CSS ends*/
 
 
 
